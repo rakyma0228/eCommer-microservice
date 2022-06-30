@@ -19,7 +19,7 @@ brew install mongodb-database-tools
 ```
 
 ```bsh
-export $(cat .env | xargs)
+source .env.local
 mongoimport --uri $MONGO_URI --collection='product-summaries' --file='data/product-summaries.json' --jsonArray --authenticationDatabase 'admin' --db='e-commerce'
 mongoimport --uri $MONGO_URI --collection='deals' --file='data/deals.json' --jsonArray --authenticationDatabase 'admin' --db='e-commerce'
 ```

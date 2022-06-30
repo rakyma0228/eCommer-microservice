@@ -4,7 +4,7 @@ namespace: e-commerce
 configMapGenerator:
   - name: cart-configmap
     literals: 
-    - SPRING_REDIS_HOST=redis-service.platform-services.svc.cluster.local
+    - SPRING_REDIS_HOST=redis-service.shared-services.svc.cluster.local
     - SPRING_REDIS_PORT=6379
     - SPRING_REDIS_PASSWORD=
 generatorOptions:
